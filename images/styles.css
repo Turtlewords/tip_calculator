@@ -1,0 +1,87 @@
+:root {
+
+    /* Spacing */
+
+    --space-0: 0px;
+    --space-100: 8px;
+    --space-200: 16px;
+    --space-300: 24px;
+    --space-400: 32px;
+    --space-600: 48px;
+    --space-1000: 80px;
+    --space-1200: 96px;
+    --space-1500: 120px;
+    --space-1600: 128px;
+
+    /* Colors */
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-50: #F3F9FA;
+    --grey-200: #C5E4E7;
+    --grey-300: #9EBBBD;
+    --grey-400: #7F9D9F;
+    --grey-500: #5E7A7D;
+    --grey-550: #547878;
+    --grey-600: #3D6666;
+    --green-200: #9FE8DF;
+    --green-400: #26C2AE;
+    --green-750: #0D686D;
+    --green-800: #085C61;
+    --green-900: #00474B;
+    --orange-400: #E17052;
+
+    /* Text Presets */
+
+    .text-one {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+
+    .text-two {
+        font-size: 32px;
+        line-height: 47px;
+        letter-spacing: -0.67px;
+    }
+
+    .text-three {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0px;
+    }
+
+    .text-four {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0px;
+    }
+
+    .text-five {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .text-six {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+
+}
+
+@font-face {
+    font-family: 'spaceMonoBold';
+    src: url("fonts/SpaceMono-Bold.ttf")
+}
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
