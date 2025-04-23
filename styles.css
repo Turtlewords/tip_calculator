@@ -83,5 +83,11 @@
   body {
     margin: 0;
     padding: 0;
-    
+    background-color: var(--green-200);
+    min-height: 100vh;
+  }
+
+  header {
+    text-align: center;
+    padding: 4rem;
   }
