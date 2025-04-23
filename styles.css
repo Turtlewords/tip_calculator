@@ -85,9 +85,99 @@
     padding: 0;
     background-color: var(--green-200);
     min-height: 100vh;
+    font-family: 'spaceMonoBold';
   }
 
   header {
     text-align: center;
-    padding: 4rem;
+    padding: 2rem;
   }
+
+  main {
+    background-color: var(--white);
+    border-radius: 20px;
+    
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: var(--space-400)
+  }
+
+  input[type="text"] {
+    display: block;
+    font-family: inherit;
+    padding: .5rem 1rem;
+    border: none;
+    width: 100%;
+    color: var(--grey-300);
+    text-align: right;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    margin-top: 1rem;
+  }
+
+  label {
+    width: 90%;
+  }
+
+  #bill {
+    background: var(--grey-50) url("images/icon-dollar.svg") no-repeat scroll left 1rem center;
+  }
+
+  #people {
+    background: var(--grey-50) url("images/icon-person.svg") no-repeat scroll left 1rem center;
+  }
+
+  input[type="text"]:focus {
+    border: 2px solid red;
+  }
+
+  fieldset {
+    border: none;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  legend {
+    margin-bottom: 1rem;
+  }
+
+  .tip-btn {
+    font-family: inherit;
+    background-color: var(--green-900);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 28px;
+    line-height: 47px;
+    letter-spacing: 0px;
+    border: none;
+    padding: 6px;
+  }
+
+  #custom {
+    background-color: var(--grey-50);
+    color: var(--grey-500);
+  }
+
+  #results {
+    padding: 2rem;
+    background-color: var(--green-900);
+  }
+
+
+
+  /* Typography */
+
+.form-label {
+    font-size: 18px;
+    color: var(--grey-500);
+}
