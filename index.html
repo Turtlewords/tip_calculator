@@ -9,49 +9,51 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <!-- <header>
     <img src="images/logo.svg" alt="company logo">
-  </header>
-  <main>
-    <form id="form">
-      <label for="bill" class="form-label">Bill
-        <input type="text" id="bill" name="bill" >
-      </label>
-      
-      <fieldset id="select-tip">
-        <legend class="form-label">Select Tip %</legend>
-        <button id="five-pct" class="tip-btn">5%</button> 
-        <button id="ten-pct" class="tip-btn">10%</button>
-        <button id="fifteen-pct" class="tip-btn">15%</button>
-        <button id="twenty-five-pct" class="tip-btn">25%</button>
-        <button id="fifty-pct" class="tip-btn">50%</button>
-        <button id="custom" class="tip-btn">Custom</button>
-      </fieldset>
-      <label for="people" class="form-label">Number of People
-        <input type="text" id="people" name="people">
-      </label>
-      
-    </form>
-    <section id="results">
-      <div id="output">
-        <div id="output-top">
-          <div id="top-left">
-            <p class="light">Tip Amount</p>
-            <p class="dark">/ person</p>
+  </header> -->
+  <div id="container">
+    <main>
+      <form id="form">
+        <label for="bill" class="form-label">Bill
+          <input type="text" id="bill" name="bill" >
+        </label>
+        
+        <fieldset id="select-tip">
+          <legend class="form-label">Select Tip %</legend>
+          <button id="five-pct" class="tip-btn">5%</button> 
+          <button id="ten-pct" class="tip-btn">10%</button>
+          <button id="fifteen-pct" class="tip-btn">15%</button>
+          <button id="twenty-five-pct" class="tip-btn">25%</button>
+          <button id="fifty-pct" class="tip-btn">50%</button>
+          <button id="custom" class="tip-btn">Custom</button>
+        </fieldset>
+        <label for="people" class="form-label">Number of People
+          <input type="text" id="people" name="people">
+        </label>
+        
+      </form>
+      <section id="results">
+        <div id="output">
+          <div id="output-top">
+            <div id="top-left">
+              <p class="light">Tip Amount</p>
+              <p class="dark">/ person</p>
+            </div>
+            <p id="tip">$0.00</p>
           </div>
-          <p id="tip">$0.00</p>
-        </div>
-        <div id="output-bottom">
-          <div id="bottom-left">
-            <p class="light">Total</p>
-            <p class="dark">/ person</p>
+          <div id="output-bottom">
+            <div id="bottom-left">
+              <p class="light">Total</p>
+              <p class="dark">/ person</p>
+            </div>
+            <p id="total">$0.00</p>
           </div>
-          <p id="total">$0.00</p>
         </div>
-      </div>
-      <button id="reset-btn">Reset</button>
-    </section>
-  </main>
+        <button id="reset-btn">RESET</button>
+      </section>
+    </main>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
