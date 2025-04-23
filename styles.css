@@ -83,7 +83,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--green-200);
+    
     min-height: 100vh;
     font-family: 'spaceMonoBold';
   }
@@ -91,12 +91,13 @@
   header {
     text-align: center;
     padding: 2rem;
+    background-color: var(--green-200);
   }
 
   main {
     background-color: var(--white);
-    border-radius: 20px;
-    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   #form {
@@ -120,6 +121,13 @@
     line-height: 36px;
     letter-spacing: 0px;
     margin-top: 1rem;
+    outline: none;
+    
+  }
+
+  input[type="text"]:focus {
+    outline: 3px solid var(--green-400);
+    
   }
 
   label {
@@ -134,9 +142,7 @@
     background: var(--grey-50) url("images/icon-person.svg") no-repeat scroll left 1rem center;
   }
 
-  input[type="text"]:focus {
-    border: 2px solid red;
-  }
+  
 
   fieldset {
     border: none;
@@ -169,15 +175,63 @@
   }
 
   #results {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .8rem;
     background-color: var(--green-900);
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 20px;
   }
 
+  #output {
+    width: 100%;
 
+  }
+
+  #output-top, #output-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #reset-btn {
+    font-family: inherit;
+    background-color: var(--green-800);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 28px;
+    line-height: 47px;
+    letter-spacing: 0px;
+    border: none;
+    padding: 6px;
+    width: 90%;
+  }
 
   /* Typography */
 
 .form-label {
     font-size: 18px;
     color: var(--grey-500);
+}
+
+.light {
+    color: var(--white);
+}
+
+.dark {
+    color: var(--grey-400);
+}
+
+#results p {
+    margin: 0;
+}
+
+#total, #tip {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -1px; 
+    color: var(--green-400);
+    margin: 0;
 }
