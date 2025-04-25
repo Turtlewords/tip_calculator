@@ -121,7 +121,7 @@
     gap: var(--space-400)
   }
 
-  input[type="text"] {
+  input[type="number"] {
     display: block;
     font-family: inherit;
     padding: .5rem 1rem;
@@ -138,7 +138,7 @@
     
   }
 
-  input[type="text"]:focus {
+  input[type="number"]:focus {
     outline: 3px solid var(--green-400);
     
   }
@@ -186,9 +186,24 @@
     
   }
 
+  .tip-btn:hover, #reset-btn:hover {
+    background-color: var(--green-200);
+    cursor: pointer;
+  }
+
+  .tip-active {
+    background-color: var(--green-200);
+  }
+
   #custom {
     background-color: var(--grey-50);
     color: var(--grey-500);
+  }
+
+  #label-box {
+    display: flex;
+    justify-content: space-between;
+    
   }
 
   #results {
@@ -253,6 +268,11 @@
     letter-spacing: -1px; 
     color: var(--green-400);
     margin: 0;
+}
+
+#people-error {
+  color: red;
+  display: none;
 }
 
 
