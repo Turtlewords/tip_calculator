@@ -43,6 +43,7 @@ function calculateTotal() {
     let num = Number(people.value)
 
     totalEl.textContent = "$" + String((bill.value / num).toFixed(2));
+    
 }
 
 function countPeople() {
@@ -61,20 +62,25 @@ function countPeople() {
     let num = Number(people.value)
 
     totalEl.textContent = "$" + String((bill.value / num).toFixed(2));
+    
 }
 
 function calculateTip() {
     if (!bill.value || !people.value) {
         return;
     }
+    
     let tip = bill.value * this.dataset.percent;
     let num = Number(people.value)
     let total = Number(bill.value) + tip;
     
+    
+
     customBtn.textContent = "Custom";
 
     tipEl.textContent = "$" + tip.toFixed(2);
     totalEl.textContent = "$" + (total / num).toFixed(2);
+    
 }
 
 function highlightTipButton(e) {
@@ -101,6 +107,7 @@ function customTip() {
     tipEl.textContent = "$" + tip.toFixed(2);
     totalEl.textContent = "$" + (total / num).toFixed(2);
     customBtn.textContent = custom * 100 + "%";
+    
 }
 
 

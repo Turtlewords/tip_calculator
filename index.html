@@ -9,11 +9,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- <header>
-    <img src="images/logo.svg" alt="company logo">
-  </header> -->
+  
   <div id="container">
     <main>
+      <h1>Splitter</h1>
       <form id="form">
         <label for="bill" class="form-label">Bill
           <input type="number" id="bill" name="bill" placeholder="0" min="0">
@@ -29,14 +28,14 @@
           <button id="custom" class="tip-btn">Custom</button>
         </fieldset>
         <label for="people" class="form-label">
-          <div id="label-box">
+          <span id="label-box">
             <span>Number of People</span><span id="people-error">Can't be zero</span>
-          </div>
+          </span>
           <input type="number" id="people" name="people" placeholder="0" min="0">
         </label>
         
       </form>
-      <section id="results">
+      <div id="results">
         <div id="output">
           <div id="output-top">
             <div id="top-left">
@@ -54,7 +53,7 @@
           </div>
         </div>
         <button id="reset-btn">RESET</button>
-      </section>
+      </div>
     </main>
   </div>
   <script src="index.js"></script>
