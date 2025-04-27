@@ -42,6 +42,10 @@ resetBtn.addEventListener("click", () => {
 
     // this resets the value of custom tip
     customBtn.textContent = 'Custom';
+
+    // removes the error message and border highlight when number of people is zero
+    peopleError.style.display = "none"
+    people.style.outline = "none";
 })
 
 function calculateTotal() {
