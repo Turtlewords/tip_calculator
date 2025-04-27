@@ -39,6 +39,9 @@ resetBtn.addEventListener("click", () => {
     buttons.forEach((button) => {
         button.classList.remove("tip-active");
     })
+
+    // this resets the value of custom tip
+    customBtn.textContent = 'Custom';
 })
 
 function calculateTotal() {
