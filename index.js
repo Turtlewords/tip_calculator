@@ -34,6 +34,14 @@ resetBtn.addEventListener("click", () => {
     people.value = "";
     tipEl.textContent = "$0.00";
     totalEl.textContent = "$0.00";
+
+    // removes active state for each tip button when reset button is clicked
+    buttons.forEach((button) => {
+        button.classList.remove("tip-active");
+    })
+
+    // this resets the value of custom tip
+    customBtn.textContent = 'Custom';
 })
 
 function calculateTotal() {
