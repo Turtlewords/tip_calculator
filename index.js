@@ -34,6 +34,13 @@ resetBtn.addEventListener("click", () => {
     people.value = "";
     tipEl.textContent = "$0.00";
     totalEl.textContent = "$0.00";
+    customBtn.textContent = "Custom";
+    peopleError.style.display = "none"
+    people.style.outline = "none";
+    buttons.forEach((button) => {
+        button.classList.remove("tip-active");
+    })
+
 })
 
 function calculateTotal() {
